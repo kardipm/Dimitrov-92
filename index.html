@@ -1,23 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dimitrov 92 Courier</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#f5f5f5; }
-    header { background:#ffcc00; padding:20px; text-align:center; }
-    header h1 { margin:0; }
-    nav { background:#333; padding:10px; text-align:center; }
-    nav a { color:#fff; margin:0 15px; text-decoration:none; }
-    section { padding:40px; text-align:center; }
-    .hero { background:#222; color:#fff; }
-    .services { display:flex; flex-wrap:wrap; justify-content:center; }
-    .card { background:#fff; padding:20px; margin:10px; width:250px; border-radius:10px; box-shadow:0 2px 5px rgba(0,0,0,0.2); }
-    footer { background:#333; color:#fff; text-align:center; padding:20px; }
-    button { padding:10px 20px; border:none; background:#ffcc00; cursor:pointer; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dimitrov 92 Courier</title>
+
+<style>
+body { font-family: Arial; margin:0; }
+
+header {
+  background:#ffcc00;
+  padding:20px;
+  text-align:center;
+}
+
+nav {
+  background:#222;
+  padding:10px;
+  text-align:center;
+}
+
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+}
+
+.hero {
+  background:#111;
+  color:white;
+  padding:60px 20px;
+  text-align:center;
+}
+
+section {
+  padding:40px;
+  text-align:center;
+}
+
+.btn {
+  display:inline-block;
+  padding:12px 20px;
+  margin-top:15px;
+  background:#ffcc00;
+  color:black;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+/* WhatsApp floating button */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px;
+  border-radius:50%;
+  font-size:20px;
+}
+</style>
+
 </head>
+
 <body>
 
 <header>
@@ -26,50 +71,36 @@
 </header>
 
 <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#contact">Contact</a>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
 </nav>
 
-<section id="home" class="hero">
+<div class="hero">
   <h2>Fast & Reliable Courier Service</h2>
   <p>Same-day & multi-drop deliveries across London</p>
-</section>
+  <a class="btn" href="tel:+447785519650">Call Now</a>
+</div>
 
-<section id="about">
+<section>
   <h2>About Me</h2>
-  <p>I have over 6 years of experience as a delivery driver, including working with Amazon and similar courier services. I specialise in fast, secure and professional deliveries across London.</p>
+  <p>I have over 6 years of experience as a delivery driver, including working with Amazon. I specialise in fast and professional deliveries across London.</p>
 </section>
 
-<section id="services">
+<section>
   <h2>Services</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Same-Day Delivery</h3>
-      <p>Quick and efficient delivery within London.</p>
-    </div>
-    <div class="card">
-      <h3>Multi-Drop</h3>
-      <p>Handling multiple deliveries with precision.</p>
-    </div>
-    <div class="card">
-      <h3>Parcel Delivery</h3>
-      <p>Safe and secure parcel handling.</p>
-    </div>
-  </div>
+  <p>Same-day delivery, multi-drop delivery, parcel delivery.</p>
 </section>
 
-<section id="contact">
+<section>
   <h2>Contact</h2>
   <p>Phone: +447785519650</p>
   <p>Email: kardipm@gmail.com</p>
-  <button onclick="window.location.href='tel:+447785519650'">Call Now</button>
 </section>
 
-<footer>
-  <p>© 2026 Dimitrov 92 Courier</p>
-</footer>
+<!-- WhatsApp button -->
+<a class="whatsapp" href="https://wa.me/447785519650">💬</a>
 
 </body>
 </html>
