@@ -8,15 +8,19 @@
 <style>
 body { margin:0; font-family:Arial; }
 
+/* HEADER */
 header {
   background:#ffcc00;
-  padding:20px;
+  padding:25px;
   text-align:center;
 }
 
+header h1 { margin:0; font-size:32px; }
+
+/* NAV */
 nav {
-  background:#222;
-  padding:10px;
+  background:#111;
+  padding:12px;
   text-align:center;
 }
 
@@ -24,21 +28,23 @@ nav a {
   color:white;
   margin:0 15px;
   text-decoration:none;
+  font-weight:bold;
 }
 
+/* HERO */
 .hero {
-  background:#111;
+  background:linear-gradient(#111,#222);
   color:white;
-  padding:60px 20px;
+  padding:70px 20px;
   text-align:center;
 }
 
-.hero h2 { font-size:28px; }
+.hero h2 { font-size:30px; }
 
 .btn {
   display:inline-block;
-  padding:16px 30px;
-  margin:10px;
+  padding:18px 35px;
+  margin:12px;
   background:#ffcc00;
   color:black;
   text-decoration:none;
@@ -47,23 +53,40 @@ nav a {
   font-size:18px;
 }
 
+/* SECTIONS */
 .section {
-  padding:40px;
+  padding:50px 20px;
   text-align:center;
 }
 
-.services p {
-  line-height:1.8;
+.section:nth-child(even) {
+  background:#f5f5f5;
 }
 
-/* Floating buttons */
+/* CARDS */
+.cards {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:white;
+  padding:20px;
+  margin:10px;
+  width:250px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FLOAT BUTTONS */
 .whatsapp {
   position:fixed;
   bottom:20px;
   right:20px;
   background:#25D366;
   color:white;
-  padding:15px;
+  padding:18px;
   border-radius:50%;
   font-size:22px;
 }
@@ -74,7 +97,7 @@ nav a {
   left:20px;
   background:#ffcc00;
   color:black;
-  padding:15px;
+  padding:18px;
   border-radius:50%;
   font-size:22px;
 }
@@ -86,7 +109,7 @@ nav a {
 
 <header>
   <h1>Dimitrov 92</h1>
-  <p>Reliable Courier Service in London</p>
+  <p><strong>Reliable Courier Service in London</strong></p>
 </header>
 
 <nav>
@@ -98,29 +121,39 @@ nav a {
 
 <div class="hero">
   <h2>Need a Fast Courier in London? We Deliver Same-Day!</h2>
-  <p>Same-day & multi-drop deliveries you can trust</p>
-  
+  <p>Fast, secure and professional delivery service</p>
+
   <a class="btn" href="tel:+447785519650">📞 Call Now</a>
   <a class="btn" href="https://wa.me/447785519650">💬 WhatsApp</a>
 </div>
 
 <div class="section">
   <h2>About Me</h2>
-  <p>I have over 6 years of experience as a delivery driver, including working with Amazon. I provide fast, secure and professional deliveries across London.</p>
+  <p>I have over 6 years of experience working as a courier driver, including Amazon deliveries. I provide fast and reliable services across London.</p>
 
-  <p><strong>✔ Trusted by clients across London</strong></p>
-  <p><strong>✔ Fast response & reliable service</strong></p>
+  <p><strong>✔ Trusted across London</strong></p>
+  <p><strong>✔ Same-day service available</strong></p>
   <p><strong>✔ Available 7 days a week</strong></p>
 </div>
 
-<div class="section services">
+<div class="section">
   <h2>Services</h2>
-  <p>
-    ✔ Same-day delivery<br>
-    ✔ Multi-drop delivery<br>
-    ✔ Parcel delivery<br>
-    ✔ Business & private clients
-  </p>
+
+  <div class="cards">
+    <div class="card">🚚 Same-Day Delivery</div>
+    <div class="card">📦 Parcel Delivery</div>
+    <div class="card">📍 Multi-Drop Delivery</div>
+    <div class="card">🏢 Business Deliveries</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Why Choose Me</h2>
+  <div class="cards">
+    <div class="card">⚡ Fast Response</div>
+    <div class="card">🔒 Secure Delivery</div>
+    <div class="card">⭐ Professional Service</div>
+  </div>
 </div>
 
 <div class="section">
@@ -129,7 +162,7 @@ nav a {
   <p>📧 kardipm@gmail.com</p>
 </div>
 
-<!-- Floating buttons -->
+<!-- FLOAT BUTTONS -->
 <a class="whatsapp" href="https://wa.me/447785519650">💬</a>
 <a class="call" href="tel:+447785519650">📞</a>
 
