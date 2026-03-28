@@ -6,7 +6,7 @@
 <title>Dimitrov 92 Courier</title>
 
 <style>
-body { font-family: Arial; margin:0; }
+body { margin:0; font-family:Arial; }
 
 header {
   background:#ffcc00;
@@ -33,22 +33,30 @@ nav a {
   text-align:center;
 }
 
-section {
+.hero h2 { font-size:28px; }
+
+.btn {
+  display:inline-block;
+  padding:16px 30px;
+  margin:10px;
+  background:#ffcc00;
+  color:black;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+  font-size:18px;
+}
+
+.section {
   padding:40px;
   text-align:center;
 }
 
-.btn {
-  display:inline-block;
-  padding:12px 20px;
-  margin-top:15px;
-  background:#ffcc00;
-  color:black;
-  text-decoration:none;
-  border-radius:5px;
+.services p {
+  line-height:1.8;
 }
 
-/* WhatsApp floating button */
+/* Floating buttons */
 .whatsapp {
   position:fixed;
   bottom:20px;
@@ -57,7 +65,18 @@ section {
   color:white;
   padding:15px;
   border-radius:50%;
-  font-size:20px;
+  font-size:22px;
+}
+
+.call {
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#ffcc00;
+  color:black;
+  padding:15px;
+  border-radius:50%;
+  font-size:22px;
 }
 </style>
 
@@ -78,29 +97,41 @@ section {
 </nav>
 
 <div class="hero">
-  <h2>Fast & Reliable Courier Service</h2>
-  <p>Same-day & multi-drop deliveries across London</p>
-  <a class="btn" href="tel:+447785519650">Call Now</a>
+  <h2>Need a Fast Courier in London? We Deliver Same-Day!</h2>
+  <p>Same-day & multi-drop deliveries you can trust</p>
+  
+  <a class="btn" href="tel:+447785519650">📞 Call Now</a>
+  <a class="btn" href="https://wa.me/447785519650">💬 WhatsApp</a>
 </div>
 
-<section>
+<div class="section">
   <h2>About Me</h2>
-  <p>I have over 6 years of experience as a delivery driver, including working with Amazon. I specialise in fast and professional deliveries across London.</p>
-</section>
+  <p>I have over 6 years of experience as a delivery driver, including working with Amazon. I provide fast, secure and professional deliveries across London.</p>
 
-<section>
+  <p><strong>✔ Trusted by clients across London</strong></p>
+  <p><strong>✔ Fast response & reliable service</strong></p>
+  <p><strong>✔ Available 7 days a week</strong></p>
+</div>
+
+<div class="section services">
   <h2>Services</h2>
-  <p>Same-day delivery, multi-drop delivery, parcel delivery.</p>
-</section>
+  <p>
+    ✔ Same-day delivery<br>
+    ✔ Multi-drop delivery<br>
+    ✔ Parcel delivery<br>
+    ✔ Business & private clients
+  </p>
+</div>
 
-<section>
+<div class="section">
   <h2>Contact</h2>
-  <p>Phone: +447785519650</p>
-  <p>Email: kardipm@gmail.com</p>
-</section>
+  <p>📞 +447785519650</p>
+  <p>📧 kardipm@gmail.com</p>
+</div>
 
-<!-- WhatsApp button -->
+<!-- Floating buttons -->
 <a class="whatsapp" href="https://wa.me/447785519650">💬</a>
+<a class="call" href="tel:+447785519650">📞</a>
 
 </body>
 </html>
